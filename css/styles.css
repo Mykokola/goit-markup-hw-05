@@ -305,6 +305,8 @@ h1,h2,h3,h4,h5,h6,p{
     color:  var(--logo-web-color);
     line-height: 1.5;
     cursor: pointer;
+    transition: color 250ms var(--cubic-bazire-deffault),
+    background 250ms var(--cubic-bazire-deffault);
 }
 .cards-cont-title{
     font-size: 20px;
