@@ -575,10 +575,12 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     border-radius: 50%;
     border:none;
     cursor: pointer;
-    float: right;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
 }
 .close-btn{
     width: 8px;
