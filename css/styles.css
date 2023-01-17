@@ -570,10 +570,11 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     padding: 24px;
 }
 .btn-modal-close{
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border:none;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -581,8 +582,17 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     position: absolute;
     top: 24px;
     right: 24px;
+    transition: background 250ms var(--cubic-bazire-deffault);
+}
+.btn-modal-close:is(:hover,:focus){
+    background: #404BBF;
+}
+.btn-modal-close:is(:hover,:focus)>.close-btn{
+    fill: #FFFFFF;
 }
 .close-btn{
     width: 8px;
     height: 8px;
+    fill: #000000;
+    transition: fill 250ms var(--cubic-bazire-deffault);
 }
