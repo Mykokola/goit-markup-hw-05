@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6,p{
     text-transform: uppercase;
     color:black;
 }
+
 .header-logo{
     margin-right: 77px;
 }
@@ -73,7 +74,7 @@ h1,h2,h3,h4,h5,h6,p{
     padding-bottom: 24px;
     display: block;
 }
-.header-menu-link::after{
+.menu-link-botttom-border::after{
     position: absolute;
     left: 0;
     bottom:  0;
@@ -85,9 +86,20 @@ h1,h2,h3,h4,h5,h6,p{
     background-color:rgba(64, 75, 191, 1);
     opacity: 0;
     transition: opacity 250ms var(--cubic-bazire-deffault);
-    
 }
-.header-menu-link:is(:hover,:focus)::after{
+.menu-link-botttom-border-active::after{
+    position: absolute;
+    left: 0;
+    bottom:  0;
+
+    content:'';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color:rgba(64, 75, 191, 1);
+   
+}
+.menu-link-botttom-border:is(:hover,:focus)::after{
     opacity: 1;
 }
 .menu-active-color{
